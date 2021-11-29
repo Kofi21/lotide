@@ -1,5 +1,5 @@
 const tail = function (array) {
-  let last = array.slice[1];
+  let last = array.slice(1);
   return last;
 };
 
