@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log("✅✅✅ Assertion Passed");
   } else {
@@ -9,7 +9,7 @@ const assertEqual = function(actual, expected) {
 const countLetters = function (letters) {
   let newObject = {};
   let string = letters.split(" ").join("");
-  
+
   for (let letter of string) {
     if (newObject[letter]) {
       newObject[letter]++;
@@ -23,3 +23,5 @@ const countLetters = function (letters) {
 const test = countLetters("Lighthouse Labs");
 assertEqual(test["L"], 2);
 assertEqual(test["L"], 3);
+
+module.exports = countLetters;
